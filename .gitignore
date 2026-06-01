@@ -1,0 +1,59 @@
+# === Dependencies ===
+node_modules/
+
+# === Build output ===
+dist/
+build/
+
+# === Cache ===
+.cache/
+.tmp/
+.parcel-cache/
+
+# === Logs ===
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# === macOS ===
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# === Env / secrets ===
+.env
+.env.local
+.env.*.local
+
+# === WebStorm / IntelliJ IDEA ===
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/usage.statistics.xml
+.idea/shelf/
+.idea/dictionaries/
+.idea/dataSources/
+.idea/dataSources.local.xml
+.idea/httpRequests/
+.idea/dynamic.xml
+.idea/uiDesigner.xml
+.idea/dbnavigator.xml
+.idea/contentModel.xml
+.idea/caches/
+.idea/libraries/
+.idea/jsLibraryMappings.xml
+.idea/sonarlint/
+*.iml
+*.ipr
+*.iws
+out/
+.idea/sshConfigs.xml
+.idea/webServers.xml
+.idea/deployment.xml
+
+# === VSCode ===
+.vscode/
+*.code-workspace
