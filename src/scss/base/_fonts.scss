@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Euclid Circular A';
+  src: url('../fonts/euclid-semibold.woff2') format('woff2'),
+      url('../fonts/euclid-semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/montserrat-medium.woff2') format('woff2'),
+      url('../fonts/montserrat-medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
