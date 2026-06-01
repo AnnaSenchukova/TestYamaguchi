@@ -1,0 +1,56 @@
+include ../ui/_picture
+
+section.advantages
+    h1.advantages__title.visually-hidden Преимущества использования фена-стайлера Yamaguchi
+    div.advantages__container.container
+        ul.advantages__list
+            section.advantages__item.advantages__format
+                h2.advantages__title
+                    span.advantages__capitalize фен
+                    span &ensp;и&ensp;
+                    span.advantages__capitalize стайлер
+                    span &ensp;в уникальном дизайне
+                p.advantages__feature 2 в 1
+                +picture('advantages-format-hero', 'jpg', 'Изоьражение с брендированными товарами феном и стайлером.')
+
+                section.advantages__subitem
+                    h3.advantages__caption.advantages__feature Фен
+                    +picture('advantages-format-dryer', 'jpg', 'Модель использует как фен')
+
+                section.advantages__subitem
+                    h3.advantages__caption.advantages__feature Стайлер
+                    +picture('advantages-format-styler', 'jpg', 'Модель  использует как стайлер')
+
+            section.advantages__item.advantages__weight
+                +picture('advantages-weight', 'png', 'Суперлёгкий фен')
+                h2.advantages__title.advantages__capitalize Суперлегкий
+                p.advantages__feature 500 г
+                p.advantages__description Уменьшает усталость рук при сушке волос, делая процедуру удобной и приятной даже после напряжённого рабочего дня.
+                p.advantages__note Не тяжелее чашки кофе
+
+            section.advantages__item.advantages__innovations
+                +picture('advantages-innovations', 'png', 'Японский мотор BLDC')
+                h2.advantages__title.advantages__capitalize
+                    span Для ценителей
+                    span комфорта и качества
+                    span в уходе за волосами
+                p.advantages__subtitle Бесщеточный мотор BLDC
+                p.advantages__note Cалонная мощность
+
+        nav.advantages__pagination(aria-label="Навигация по слайдам")
+            button.advantages__pagination-item.advantages__capitalize.is-active(
+                type="button"
+                aria-label="Слайд: формат"
+                data-slide="0"
+            )
+            button.advantages__pagination-item.advantages__capitalize(
+                type="button"
+                aria-label="Слайд: вес"
+                data-slide="1"
+            )
+            button.advantages__pagination-item.advantages__capitalize(
+                type="button"
+                aria-label="Слайд: инновации"
+                data-slide="2"
+            )
+

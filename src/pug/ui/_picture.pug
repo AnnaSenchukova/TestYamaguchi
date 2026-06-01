@@ -1,0 +1,14 @@
+mixin picture(name, ext, alt, className)
+    - var cls = className || ''
+    picture(class=cls ? `${cls}-picture` : null)
+        source(
+            media="(min-width: 768px)"
+            srcset=`img/${name}-desktop@1x.${ext} 1x, img/${name}-desktop@2x.${ext} 2x`
+        )
+        img(
+            src=`img/${name}-mobile@1x.${ext}`
+            srcset=`img/${name}-mobile@1x.${ext} 1x, img/${name}-mobile@2x.${ext} 2x`
+            alt=alt
+            class=cls
+            loading="lazy"
+        )
