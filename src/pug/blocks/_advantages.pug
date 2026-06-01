@@ -4,53 +4,65 @@ section.advantages
     h1.advantages__title.visually-hidden Преимущества использования фена-стайлера Yamaguchi
     div.advantages__container.container
         ul.advantages__list
-            section.advantages__item.advantages__format
-                h2.advantages__title
-                    span.advantages__capitalize фен
-                    span &ensp;и&ensp;
-                    span.advantages__capitalize стайлер
-                    span &ensp;в уникальном дизайне
-                p.advantages__feature 2 в 1
-                +picture('advantages-format-hero', 'jpg', 'Изоьражение с брендированными товарами феном и стайлером.')
+            li.advantages__item
+                article.format
+                    hgroup.format__heading
+                        h2.format__title
+                            span.format__title-part фен
+                            span.format__title-part и
+                            span.format__title-part стайлер
+                            span.format__title-part в уникальном дизайне
+                        small.advantages__badge.format__feature.badge 2 в 1
 
-                section.advantages__subitem
-                    h3.advantages__caption.advantages__feature Фен
-                    +picture('advantages-format-dryer', 'jpg', 'Модель использует как фен')
+                    figure.format__image
+                        +picture('advantages-format-dryer', 'jpg', 'Модель использует как фен')
+                        figcaption.advantages__badge.format__caption Фен
 
-                section.advantages__subitem
-                    h3.advantages__caption.advantages__feature Стайлер
-                    +picture('advantages-format-styler', 'jpg', 'Модель  использует как стайлер')
+                    figure.format__image
+                        +picture('advantages-format-styler', 'jpg', 'Модель использует как стайлер')
+                        figcaption.advantages__badge.format__caption Стайлер
 
-            section.advantages__item.advantages__weight
-                +picture('advantages-weight', 'png', 'Суперлёгкий фен')
-                h2.advantages__title.advantages__capitalize Суперлегкий
-                p.advantages__feature 500 г
-                p.advantages__description Уменьшает усталость рук при сушке волос, делая процедуру удобной и приятной даже после напряжённого рабочего дня.
-                p.advantages__note Не тяжелее чашки кофе
+                    +picture('advantages-format-hero', 'jpg', 'Изоьражение с брендированными товарами феном и стайлером.')
 
-            section.advantages__item.advantages__innovations
-                +picture('advantages-innovations', 'png', 'Японский мотор BLDC')
-                h2.advantages__title.advantages__capitalize
-                    span Для ценителей
-                    span комфорта и качества
-                    span в уходе за волосами
-                p.advantages__subtitle Бесщеточный мотор BLDC
-                p.advantages__note Cалонная мощность
+            li.advantages__item
+                article.weight
+                    hgroup.weight__heading
+                        h2.weight__title Суперлегкий
+                        p.weight__descriptor лёгкость и комфорт в руке
+                        small.advantages__badge.weight__feature 500 г
 
-        nav.advantages__pagination(aria-label="Навигация по слайдам")
-            button.advantages__pagination-item.advantages__capitalize.is-active(
-                type="button"
-                aria-label="Слайд: формат"
-                data-slide="0"
-            )
-            button.advantages__pagination-item.advantages__capitalize(
-                type="button"
-                aria-label="Слайд: вес"
-                data-slide="1"
-            )
-            button.advantages__pagination-item.advantages__capitalize(
-                type="button"
-                aria-label="Слайд: инновации"
-                data-slide="2"
-            )
+                    p.advantages__description.weight__description Уменьшает усталость рук при сушке волос, делая процедуру удобной и приятной даже после напряжённого рабочего дня.
+                    +picture('advantages-weight', 'png', 'Суперлёгкий фен')
+                    small.advantages__note.weight__note Не тяжелее чашки кофе
+
+
+            li.advantages__item
+                article.innovations
+                    hgroup.innovations__heading
+                        h2.innovations__title
+                            span.innovations__title-part Для ценителей
+                            span.innovations__title-part комфорта и качества
+                            span.innovations__title-part в уходе за волосами
+                        p.innovations__descriptor Инновационный японский мотор
+
+                    figure.innovations__image
+                        +picture('advantages-innovations', 'png', 'Японский мотор BLDC')
+                        figcaption.innovations__subtitle Бесщеточный мотор BLDC
+                    small.advantages__note.innovations__note Салонная мощность
+
+        nav.advantages__nav(aria-label="Навигация по слайдам")
+            button.advantages__nav-item.advantages__nav-item--active(type="button" data-slide="0" aria-label="Слайд: формат" aria-current="true")
+                svg.advantages__nav-icon(aria-hidden="true")
+                    use(href="#advantages-format-icon")
+                span.advantages__nav-label Фен-стайлер 2 в 1
+
+            button.advantages__nav-item(type="button" data-slide="1" aria-label="Слайд: вес")
+                svg.advantages__nav-icon(aria-hidden="true")
+                    use(href="#advantages-weight-icon")
+                span.advantages__nav-label Суперлёгкий
+
+            button.advantages__nav-item(type="button" data-slide="2" aria-label="Слайд: инновации")
+                svg.advantages__nav-icon(aria-hidden="true")
+                    use(href="#advantages-innovations-icon")
+                span.advantages__nav-label Инновационный японский мотор
 
