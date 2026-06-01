@@ -57,3 +57,6 @@ out/
 # === VSCode ===
 .vscode/
 *.code-workspace
+
+# === Авто-генерируемый спрайт ===
+src/pug/blocks/_sprite.svg
